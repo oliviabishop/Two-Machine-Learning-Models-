@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  TwoMLModels
 //
-//  Created by Abby Bishop on 10/31/19.
+//  Created by Olivia Bishop on 10/31/19.
 //  Copyright © 2019 Olivia Bishop. All rights reserved.
 //
 

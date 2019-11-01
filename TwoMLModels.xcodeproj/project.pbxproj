@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		7B7CC1E0236B9CDD0093A63E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7CC1DF236B9CDD0093A63E /* AppDelegate.swift */; };
 		7B7CC1E2236B9CDD0093A63E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7CC1E1236B9CDD0093A63E /* SceneDelegate.swift */; };
-		7B7CC1E4236B9CDD0093A63E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7CC1E3236B9CDD0093A63E /* ViewController.swift */; };
 		7B7CC1E7236B9CDD0093A63E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7CC1E5236B9CDD0093A63E /* Main.storyboard */; };
 		7B7CC1E9236B9CE00093A63E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B7CC1E8236B9CE00093A63E /* Assets.xcassets */; };
 		7B7CC1EC236B9CE00093A63E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7CC1EA236B9CE00093A63E /* LaunchScreen.storyboard */; };
+		7B7CC1F4236B9D420093A63E /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7CC1F3236B9D420093A63E /* ImageViewController.swift */; };
+		7B7CC1F6236BAC190093A63E /* GoogLeNetPlaces.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7B7CC1F5236BAC190093A63E /* GoogLeNetPlaces.mlmodel */; };
+		7B7CC1F8236BAC2C0093A63E /* VGG16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7B7CC1F7236BAC2C0093A63E /* VGG16.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7B7CC1DC236B9CDD0093A63E /* TwoMLModels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoMLModels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B7CC1DF236B9CDD0093A63E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B7CC1E1236B9CDD0093A63E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7B7CC1E3236B9CDD0093A63E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B7CC1E6236B9CDD0093A63E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B7CC1E8236B9CE00093A63E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B7CC1EB236B9CE00093A63E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B7CC1ED236B9CE00093A63E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B7CC1F3236B9D420093A63E /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		7B7CC1F5236BAC190093A63E /* GoogLeNetPlaces.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = GoogLeNetPlaces.mlmodel; path = "../../../Downloads/ML-Vision/ML-Vision/GoogLeNetPlaces.mlmodel"; sourceTree = "<group>"; };
+		7B7CC1F7236BAC2C0093A63E /* VGG16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = VGG16.mlmodel; path = "../../../Downloads/ML-Vision/ML-Vision/VGG16.mlmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				7B7CC1DF236B9CDD0093A63E /* AppDelegate.swift */,
 				7B7CC1E1236B9CDD0093A63E /* SceneDelegate.swift */,
-				7B7CC1E3236B9CDD0093A63E /* ViewController.swift */,
 				7B7CC1E5236B9CDD0093A63E /* Main.storyboard */,
 				7B7CC1E8236B9CE00093A63E /* Assets.xcassets */,
 				7B7CC1EA236B9CE00093A63E /* LaunchScreen.storyboard */,
 				7B7CC1ED236B9CE00093A63E /* Info.plist */,
+				7B7CC1F3236B9D420093A63E /* ImageViewController.swift */,
+				7B7CC1F5236BAC190093A63E /* GoogLeNetPlaces.mlmodel */,
+				7B7CC1F7236BAC2C0093A63E /* VGG16.mlmodel */,
 			);
 			path = TwoMLModels;
 			sourceTree = "<group>";
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B7CC1E4236B9CDD0093A63E /* ViewController.swift in Sources */,
 				7B7CC1E0236B9CDD0093A63E /* AppDelegate.swift in Sources */,
+				7B7CC1F4236B9D420093A63E /* ImageViewController.swift in Sources */,
 				7B7CC1E2236B9CDD0093A63E /* SceneDelegate.swift in Sources */,
+				7B7CC1F6236BAC190093A63E /* GoogLeNetPlaces.mlmodel in Sources */,
+				7B7CC1F8236BAC2C0093A63E /* VGG16.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
